@@ -10,8 +10,8 @@
         }
     },
     "pre_install": [
-        "Expand-7zipArchive \"$dir\\studio-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal",
-        "Remove-Item \"$dir\\lib\""
+        "Get-ChildItem \"$dir\\*\" -Exclude 'studio-*-full.nupkg' | Remove-Item",
+        "Expand-7zipArchive \"$dir\\studio-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal"
     ],
     "shortcuts": [["Studio.exe", "WordPress Studio"]],
     "checkver": {
