@@ -1,0 +1,29 @@
+{
+    "version": "1.0.3",
+    "homepage": "https://developer.wordpress.com/studio/",
+    "description": "A fast, free way to develop locally with WordPress.",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.a8c-ci.services/studio/studio-win32-v1.0.3.exe#/dl.7z",
+            "hash": "6dfdf8b478c719f3bba82c8321a38230a3971d3c5385e3390f4973162aed9cd1"
+        }
+    },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\studio-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal",
+        "Remove-Item \"$dir\\lib\""
+    ],
+    "shortcuts": [["Studio.exe", "WordPress Studio"]],
+    "checkver": {
+        "url": "https://developer.wordpress.com/studio/",
+        "regex": "Download for Windows"
+        
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.a8c-ci.services/studio/studio-win32-v$version.exe#/dl.7z"
+            }
+        }
+    }
+}

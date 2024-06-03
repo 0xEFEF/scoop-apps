@@ -1,0 +1,29 @@
+{
+    "version": "v2.1.3-win-042311",
+    "homepage": "https://www.cocos.com/",
+    "description": "Global Leading Platform for Digital Interactive Content Development",
+    "license": "MIT",
+    "url": "https://download.cocos.com/CocosDashboard/v2.1.3/CocosDashboard-v2.1.3-win-042311.exe",
+    "hash": "2bbc1286ee1fe4893c29a74f4617ceb8d2c6a5d4c5463bf56e16b636ec6f5a8e",
+    "pre_install": [
+        "Start-Process -Wait \"$dir\\$fname\" -ArgumentList '/extract', \"`\"$dir`\"\"",
+        "Expand-MsiArchive \"$dir\\CocosDashboard_setup.msi\" \"$dir\" | Out-Null",
+        "Remove-Item \"$dir\\CocosDashboard_setup.aiui\" -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\CocosDashboard_setup1.cab\" -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\CocosDashboard_setup.msi\" -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\CocosDashboard-v*\" -Force -ErrorAction SilentlyContinue"
+    ],
+    "shortcuts": [["CocosDashboard.exe", "Cocos Dashboard"]],
+    "checkver": {
+        "url": "https://www.cocos.com/creator-download",
+        "regex": "下载 Cocos Dashboard"
+        
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.cocos.com/CocosDashboard/$matchHead/CocosDashboard-$version.exe"
+            }
+        }
+    }
+}
