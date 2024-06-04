@@ -17,7 +17,6 @@
     "checkver": {
         "url": "https://developer.wordpress.com/studio/",
         "regex": "Download for Windows"
-        
     },
     "autoupdate": {
         "architecture": {

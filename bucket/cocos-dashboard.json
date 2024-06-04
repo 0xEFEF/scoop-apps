@@ -17,7 +17,6 @@
     "checkver": {
         "url": "https://www.cocos.com/creator-download",
         "regex": "下载 Cocos Dashboard"
-        
     },
     "autoupdate": {
         "architecture": {
