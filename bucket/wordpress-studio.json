@@ -16,7 +16,7 @@
     "shortcuts": [["Studio.exe", "WordPress Studio"]],
     "checkver": {
         "url": "https://developer.wordpress.com/studio/",
-        "regex": "Download for Windows"
+        "regex": "studio-win32-v([\\d.]+).exe"
     },
     "autoupdate": {
         "architecture": {
