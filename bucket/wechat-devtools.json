@@ -13,7 +13,8 @@
     "shortcuts": [["微信开发者工具.exe", "微信开发者工具"]],
     "checkver": {
         "url": "https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html",
-        "regex": "(\\d+\\.\\d+\\.\\d+)$"
+        "regex": "(\\d+)-(\\d+)-(\\d+)-Windows-64",
+        "replace": "${1}.${2}.${3}"
     },
     "autoupdate": {
         "architecture": {
