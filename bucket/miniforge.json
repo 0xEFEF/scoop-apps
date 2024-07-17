@@ -37,6 +37,13 @@
         ]
     ],
     "persist": "envs",
+    "notes": [
+        "* Known issue:",
+        "  - The App may fail to install when 'Long Paths' are not enabled, Check it by executing `scoop checkup`. (#11570)",
+        "------",
+        "From 4.6.0, conda has built the support for Cmd, Powershell or other shells.",
+        "Use \"conda init powershell\" or \"conda init __your_favorite_shell__\""
+    ],
     "checkver": {
         "github": "https://github.com/conda-forge/miniforge",
         "regex": "tag/([\\d.-]+)"
