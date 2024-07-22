@@ -1,12 +1,12 @@
 {
-    "version": "1.0.5",
+    "version": "1.0.6",
     "homepage": "https://developer.wordpress.com/studio/",
     "description": "A fast, free way to develop locally with WordPress.",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.a8c-ci.services/studio/studio-win32-v1.0.5.exe#/dl.7z",
-            "hash": "f7952a35f17c519b1103ec3e5a892e4b88c60cecdae7b80a561335f1fde7c3aa"
+            "url": "https://cdn.a8c-ci.services/studio/studio-win32-v1.0.6.exe#/dl.7z",
+            "hash": "ba5834cba90002d5bcbd3f542bc5daba39f340c364bf7d19a3cfe74471a58d36"
         }
     },
     "pre_install": [
