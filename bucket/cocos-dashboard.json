@@ -4,7 +4,7 @@
     "description": "Global Leading Platform for Digital Interactive Content Development",
     "license": "Freeware",
     "architecture": {
-        "32bit": {
+        "64bit": {
             "url": "https://download.cocos.com/CocosDashboard/v2.1.4/CocosDashboard-v2.1.4-win-072614.exe",
             "hash": "c6c233b1876fdc4c7fb6d0db4c260e70ac15d3b1c839851ceff95f1edd2d26dd"
         }
@@ -29,7 +29,7 @@
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
+            "64bit": {
                 "url": "https://download.cocos.com/CocosDashboard/v$matchVersion/CocosDashboard-v$matchVersion-win-$matchBuild.exe"
             }
         }
