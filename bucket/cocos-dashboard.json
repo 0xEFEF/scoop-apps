@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://download.cocos.com/CocosDashboard/$version/CocosDashboard-$matchBuild.exe"
+                "url": "https://download.cocos.com/CocosDashboard/$version/CocosDashboard-$version-win-$matchBuild.exe"
             }
         }
     }
