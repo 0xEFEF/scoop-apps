@@ -10,12 +10,7 @@
         }
     },
     "pre_install": "Remove-Item \"$dir\" -Include '卸载微信开发者工具.exe.nsis', '$PLUGINSDIR' -Recurse",
-    "shortcuts": [
-        [
-            "微信开发者工具.exe",
-            "微信开发者工具"
-        ]
-    ],
+    "shortcuts": [["微信开发者工具.exe", "微信开发者工具"]],
     "checkver": {
         "url": "https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html",
         "regex": "(\\d+)-(\\d+)-(\\d+)-Windows-64",

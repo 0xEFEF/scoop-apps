@@ -1,5 +1,5 @@
 {
-    "version": "v2.1.3",
+    "version": "2.1.3",
     "homepage": "https://www.cocos.com/",
     "description": "Global Leading Platform for Digital Interactive Content Development",
     "license": "Freeware",
@@ -20,12 +20,12 @@
     "shortcuts": [["CocosDashboard.exe", "Cocos Dashboard"]],
     "checkver": {
         "url": "https://www.cocos.com/server/productionVersion/dashboard/latest",
-        "regex": "CocosDashboard-(?<version>[\\d.]+)-win-(?<build>[\\d]+)\\.exe"
+        "regex": "CocosDashboard-v(?<version>[\\d.]+)-win-(?<build>\\d+)\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://download.cocos.com/CocosDashboard/$version/CocosDashboard-$version-win-$matchBuild.exe"
+                "url": "https://download.cocos.com/CocosDashboard/v$matchVersion/CocosDashboard-$matchVersion-win-$matchBuild.exe"
             }
         }
     }
