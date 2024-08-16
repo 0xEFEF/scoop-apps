@@ -15,8 +15,8 @@
     "extract_dir": "PFiles\\charles",
     "shortcuts": [["Charles.exe", "Charles"]],
     "checkver": {
-        "github": "https://www.charlesproxy.com/latest-release/download.do",
-        "regex": "The latest version of Charles is ([\\d.]+)"
+        "url": "https://www.charlesproxy.com/latest-release/download.do",
+        "regex": "Version ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
