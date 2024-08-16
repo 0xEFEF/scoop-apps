@@ -17,6 +17,24 @@
         "Remove-Item \"$dir\\CocosDashboard_setup.msi\" -Force -ErrorAction SilentlyContinue",
         "Remove-Item \"$dir\\CocosDashboard-v*\" -Force -ErrorAction SilentlyContinue"
     ],
+    "post_install": [
+        "$config = \"$env:USERPROFILE\\.Cocos\\profiles\\editor.json\"",
+        "$editors_dir = \"$persist_dir\\editors\"",
+        "if (!(Test-Path $config)) {",
+        "    $settings = @{",
+        "        'download_url' = $editors_dir",
+        "    }",
+        "    New-Item $config -Type File -Force | Out-Null",
+        "    Set-Content $config ($settings | ConvertToPrettyJson) -Encoding ASCII -Force",
+        "} else {",
+        "  $conf_content = (Get-Content $config | ConvertFrom-Json)",
+        "  if ($conf_content.'download_url' -ne $editors_dir) {",
+        "    $conf_content.'download_url' = $editors_dir",
+        "    Set-Content $config ($conf_content | ConvertToPrettyJson) -Encoding ASCII -Force",
+        "  }",
+        "}"
+    ],
+    "persist": "editors",
     "shortcuts": [
         [
             "CocosDashboard.exe",
