@@ -16,7 +16,7 @@
     "shortcuts": [["navicat.exe", "Navicat"]],
     "checkver": {
         "url": "https://www.navicat.com/en/products/navicat-premium-release-note",
-        "regex": "Navicat\\s+Premium\\s+\\Windows\\s+version\\s+([\\d.]+)"
+        "regex": "Navicat\\s+Premium\\s+\\(Windows\\)\\s+version\\s+([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
