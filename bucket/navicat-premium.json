@@ -15,8 +15,8 @@
     "innosetup": true,
     "shortcuts": [["navicat.exe", "Navicat"]],
     "checkver": {
-        "github": "https://www.navicat.com/en/products/navicat-premium-release-note",
-        "regex": "Navicat Premium (Windows) version ([\\d.]+)"
+        "url": "https://www.navicat.com/en/products/navicat-premium-release-note",
+        "regex": "Navicat\\s+Premium\\s+\\Windows\\s+version\\s+([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
