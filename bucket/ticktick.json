@@ -10,12 +10,7 @@
         }
     },
     "innosetup": true,
-    "shortcuts": [
-        [
-            "TickTick.exe",
-            "TickTick"
-        ]
-    ],
+    "shortcuts": [["TickTick.exe", "TickTick"]],
     "checkver": {
         "url": "https://ticktick.en.uptodown.com/windows",
         "regex": "TickTick ([\\d.]+)"

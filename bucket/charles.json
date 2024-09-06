@@ -13,12 +13,7 @@
         }
     },
     "extract_dir": "PFiles\\charles",
-    "shortcuts": [
-        [
-            "Charles.exe",
-            "Charles"
-        ]
-    ],
+    "shortcuts": [["Charles.exe", "Charles"]],
     "checkver": {
         "url": "https://www.charlesproxy.com/latest-release/download.do",
         "regex": "Version ([\\d.]+)"

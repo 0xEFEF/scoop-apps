@@ -13,12 +13,7 @@
         "Remove-Item \"$dir\" -Include '卸载微信开发者工具.exe.nsis' -Recurse -Force",
         "Rename-Item \"$dir\\微信开发者工具.exe\" 'wechat-devtools.exe'"
     ],
-    "shortcuts": [
-        [
-            "wechat-devtools.exe",
-            "Wechat Devtools"
-        ]
-    ],
+    "shortcuts": [["wechat-devtools.exe", "Wechat Devtools"]],
     "checkver": {
         "url": "https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html",
         "regex": "(\\d+)-(\\d+)-(\\d+)-Windows-64",
