@@ -1,19 +1,24 @@
 {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "homepage": "https://developer.wordpress.com/studio/",
     "description": "A fast, free way to develop locally with WordPress.",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.a8c-ci.services/studio/studio-win32-v1.1.0.exe#/dl.7z",
-            "hash": "421cbf5543fb5c7c0f038f3c27b9ad3eb0b27368753df2fbea04093f02ae1054"
+            "url": "https://cdn.a8c-ci.services/studio/studio-win32-v1.1.1.exe#/dl.7z",
+            "hash": "c7dba806ceb7d71a1ae50ce51401015805aed600f56a25c0e8b1ce2004db8e8f"
         }
     },
     "pre_install": [
         "Get-ChildItem \"$dir\\*\" -Exclude 'studio-*-full.nupkg' | Remove-Item",
         "Expand-7zipArchive \"$dir\\studio-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal"
     ],
-    "shortcuts": [["Studio.exe", "WordPress Studio"]],
+    "shortcuts": [
+        [
+            "Studio.exe",
+            "WordPress Studio"
+        ]
+    ],
     "checkver": {
         "url": "https://developer.wordpress.com/studio/",
         "regex": "studio-win32-v([\\d.]+).exe"
