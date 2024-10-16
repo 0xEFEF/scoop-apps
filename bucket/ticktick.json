@@ -1,12 +1,12 @@
 {
-    "version": "6.0.60",
+    "version": "6.1.0.0",
     "homepage": "https://ticktick.com/",
     "description": "A powerful to-do & task management app.",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://d2atcrkye2ik4e.cloudfront.net/download/win64/tick_win_setup_release_x64_6060.exe",
-            "hash": "43ce4728b8faf9435f1b818f7b2ae83f7cb2bbd0101b3fac4cf5a2160ac26cf5"
+            "url": "https://d2atcrkye2ik4e.cloudfront.net/download/win64/tick_win_setup_release_x64_6100.exe",
+            "hash": "67b38465418e17c3d95157e98d7c63165ffb0c83163eb2cc6da5411f6570855a"
         }
     },
     "innosetup": true,
