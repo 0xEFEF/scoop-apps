@@ -1,19 +1,24 @@
 {
-    "version": "1.06.2407120",
+    "version": "1.06.2409140",
     "homepage": "https://developers.weixin.qq.com/doc/",
     "description": "Wechat Devtools",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2407120_win32_x64.exe#/dl.7z",
-            "hash": "9b9e2b5660e148df5203ec7c41f6646f69a045e478405cea48b5e76b09ac31e5"
+            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2409140_win32_x64.exe#/dl.7z",
+            "hash": "5df8fb3589161dcac1904bedccff2b900a270852bf8d1858b514a6818fe9768e"
         }
     },
     "pre_install": [
         "Remove-Item \"$dir\" -Include '卸载微信开发者工具.exe.nsis' -Recurse -Force",
         "Rename-Item \"$dir\\微信开发者工具.exe\" 'wechat-devtools.exe'"
     ],
-    "shortcuts": [["wechat-devtools.exe", "Wechat Devtools"]],
+    "shortcuts": [
+        [
+            "wechat-devtools.exe",
+            "Wechat Devtools"
+        ]
+    ],
     "checkver": {
         "url": "https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html",
         "regex": "(\\d+)-(\\d+)-(\\d+)-Windows-64",
