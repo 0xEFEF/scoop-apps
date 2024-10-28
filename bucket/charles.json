@@ -1,10 +1,10 @@
 {
     "version": "4.6.7",
     "description": "A tool for viewing and debugging HTTP and SSL / HTTPS traffic between your machine and the Internet",
-    "homepage": "https://www.charlesproxy.com/",
+    "homepage": "https://www.charlesproxy.com",
     "license": {
         "identifier": "Proprietary",
-        "url": "https://www.charlesproxy.com/buy/eula/"
+        "url": "https://www.charlesproxy.com/buy/eula"
     },
     "architecture": {
         "64bit": {
