@@ -25,7 +25,7 @@
     "shortcuts": [["StarUML.exe", "StarUML"]],
     "checkver": {
         "url": "https://staruml.io",
-        "regex": "^(?!Astro)\\s+v([\\d.]+)"
+        "regex": "^(?!Astro)\\sv([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://staruml.io/api/download/releases-v$majorVersion/StarUML%20Setup%20$version.exe#/dl.7z"
