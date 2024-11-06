@@ -1,12 +1,12 @@
 {
-    "version": "2.1.4",
+    "version": "2.2.0",
     "homepage": "https://www.cocos.com",
     "description": "Global Leading Platform for Digital Interactive Content Development",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://download.cocos.com/CocosDashboard/v2.1.4/CocosDashboard-v2.1.4-win-072614.exe",
-            "hash": "c6c233b1876fdc4c7fb6d0db4c260e70ac15d3b1c839851ceff95f1edd2d26dd"
+            "url": "https://download.cocos.com/CocosDashboard/v2.2.0/CocosDashboard-v2.2.0-win-102817.exe",
+            "hash": "0f1115197ced50c53854a310f872fa0b8f98f60a39cbaf9a2dfe1ba875a32e34"
         }
     },
     "pre_install": [
@@ -35,7 +35,12 @@
         "}"
     ],
     "persist": "editors",
-    "shortcuts": [["CocosDashboard.exe", "Cocos Dashboard"]],
+    "shortcuts": [
+        [
+            "CocosDashboard.exe",
+            "Cocos Dashboard"
+        ]
+    ],
     "checkver": {
         "url": "https://www.cocos.com/server/productionVersion/dashboard/latest",
         "regex": "CocosDashboard-v(?<version>[\\d.]+)-win-(?<build>\\d+)\\.exe"
