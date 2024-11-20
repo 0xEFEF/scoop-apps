@@ -1,5 +1,5 @@
 {
-    "version": "17.1.10",
+    "version": "17.1.11",
     "description": "Shape your data, design your success. Modeling mastery at your fingertips.",
     "homepage": "https://www.navicat.com",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dn.navicat.com/download/navicat17_premium_en_x64.exe",
-            "hash": "62b1a20365fd59dae3a3e0d599488a5820b3f80642323840ef0c8cc43daf11eb"
+            "hash": "49bd3d2e1a06fe1823d686de03c408f11d36e81ac6076060db275a7d97ff2e97"
         }
     },
     "innosetup": true,
