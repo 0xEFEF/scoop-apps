@@ -1,0 +1,28 @@
+{
+    "version": "4.3.2",
+    "homepage": "https://developer.open-douyin.com",
+    "description": "Douyin Devtools",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://sf1-cdn-tos.douyinstatic.com/obj/microapp/frontend/ide/package/obj/developer/ide/12237246/win32/%E6%8A%96%E9%9F%B3%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7-4.3.2.exe#/dl.7z",
+            "hash": "3dcbc16391b42eb31adbe0f4f6d4012554d4a0ea976cc3760ba4e77169fb3326"
+        }
+    },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*.exe\", \"$dir\\uninstallerIcon.ico\" -Recurse -Force"
+    ],
+    "shortcuts": [["抖音开发者工具.exe", "抖音开发者工具"]],
+    "checkver": {
+        "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/dev-tools/developer-instrument/download/developer-instrument-update-and-download",
+        "regex": "([\\d.]+)（\\d{4}-\\d{2}-\\d{2}）"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://sf1-cdn-tos.douyinstatic.com/obj/microapp/frontend/ide/package/obj/developer/ide/12237246/win32/%E6%8A%96%E9%9F%B3%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7-$version.exee#/dl.7z"
+            }
+        }
+    }
+}
