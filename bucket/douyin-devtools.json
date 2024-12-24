@@ -1,19 +1,24 @@
 {
-    "version": "4.3.2",
+    "version": "4.3.3",
     "homepage": "https://developer.open-douyin.com",
     "description": "Douyin Devtools",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://sf1-cdn-tos.douyinstatic.com/obj/microapp/frontend/ide/package/obj/developer/ide/12237246/win32/%E6%8A%96%E9%9F%B3%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7-4.3.2.exe#/dl.7z",
-            "hash": "3dcbc16391b42eb31adbe0f4f6d4012554d4a0ea976cc3760ba4e77169fb3326"
+            "url": "https://sf1-cdn-tos.douyinstatic.com/obj/microapp/frontend/ide/package/obj/developer/ide/12256484/win32/%E6%8A%96%E9%9F%B3%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7-4.3.3.exe#/dl.7z",
+            "hash": "a7bdc4e582385c08827b01a11875996ef8a179c3328d88d67c8e53caf395e1d7"
         }
     },
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*.exe\", \"$dir\\uninstallerIcon.ico\" -Recurse -Force"
     ],
-    "shortcuts": [["抖音开发者工具.exe", "抖音开发者工具"]],
+    "shortcuts": [
+        [
+            "抖音开发者工具.exe",
+            "抖音开发者工具"
+        ]
+    ],
     "checkver": {
         "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/dev-tools/developer-instrument/download/developer-instrument-update-and-download",
         "regex": "ide/(?<bucket>[\\d]+)/win32/抖音开发者工具-(?<version>[\\d.]+)\\.exe"
