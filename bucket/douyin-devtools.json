@@ -11,12 +11,13 @@
     },
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*.exe\", \"$dir\\uninstallerIcon.ico\" -Recurse -Force"
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*.exe\", \"$dir\\uninstallerIcon.ico\" -Recurse -Force",
+        "Rename-Item \"$dir\\抖音开发者工具.exe\" 'douyin-devtools.exe'"
     ],
     "shortcuts": [
         [
-            "抖音开发者工具.exe",
-            "抖音开发者工具"
+            "douyin-devtools.exe",
+            "Douyin Devtools"
         ]
     ],
     "checkver": {
