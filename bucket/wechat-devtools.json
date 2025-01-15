@@ -1,12 +1,12 @@
 {
-    "version": "1.06.2412040",
+    "version": "1.06.2412050",
     "homepage": "https://developers.weixin.qq.com/doc",
     "description": "Wechat Devtools",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2412040_win32_x64.exe#/dl.7z",
-            "hash": "723dbd73f5642e184acdb003270a8eada64820a111895691cf48f391bf9e58be"
+            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2412050_win32_x64.exe#/dl.7z",
+            "hash": "d948efda9044714b2c1de585d5d4b5a5e0fbb7c9659f0c9046aca51655ac8b3c"
         }
     },
     "pre_install": [
