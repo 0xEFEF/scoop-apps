@@ -1,12 +1,12 @@
 {
-    "version": "4.3.6",
+    "version": "4.3.7",
     "homepage": "https://developer.open-douyin.com",
     "description": "Douyin Devtools",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://sf1-cdn-tos.douyinstatic.com/obj/microapp/frontend/ide/package/obj/developer/ide/12296766/win32/%E6%8A%96%E9%9F%B3%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7-4.3.6.exe#/dl.7z",
-            "hash": "6fabd44a0826815cf6126b79dddf17850b23babf7f820dbff87aacfb71971e55"
+            "url": "https://sf1-cdn-tos.douyinstatic.com/obj/microapp/frontend/ide/package/obj/developer/ide/12305972/win32/%E6%8A%96%E9%9F%B3%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7-4.3.7.exe#/dl.7z",
+            "hash": "b1e4c32cf48c3c1cf0243c0e8dc820b5b4976a9c2dc69db2a82afcdeff6f7664"
         }
     },
     "pre_install": [
