@@ -12,7 +12,9 @@
             "hash": "816cefee8e4246e1818f4788a0f3589a1f500a173152e0e5849e8deb1d3d6ebb"
         }
     },
-    "extract_dir": "PFiles\\charles",
+    "pre_install": [
+        "Get-ChildItem \"$dir\\VFS\\ProgramFilesX64\\Charles*\" | Remove-Item"
+    ],
     "shortcuts": [["Charles.exe", "Charles"]],
     "checkver": {
         "url": "https://www.charlesproxy.com/latest-release",
@@ -21,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.charlesproxy.com/assets/release/$version/charles-proxy-$version-win64.msi"
+                "url": "https://www.charlesproxy.com/assets/release/$version/charles-proxy-$version-win64.appx#/dl.7z"
             }
         }
     }
