@@ -12,13 +12,12 @@
             "hash": "a1305a4c780ac269c667c7bdab4ecb95ff1852628130377b213ad590beaf63e4"
         }
     },
-    "pre_install": "Get-ChildItem \"$dir\\VFS\\ProgramFilesX64\\Charles*\" | Remove-Item",
-    "shortcuts": [
-        [
-            "Charles.exe",
-            "Charles"
-        ]
+    "pre_install": [
+        "Get-ChildItem \"$dir\" -Exclude 'VFS' | Remove-Item -Recurse -Force",
+        "Get-ChildItem \"$dir\\VFS\\ProgramFilesX64\\Charles\" -Recurse | Move-Item -Destination \"$dir\"",
+        "Remove-Item \"$dir\\VFS*\" -Force -Recurse"
     ],
+    "shortcuts": [["Charles.exe", "Charles"]],
     "checkver": {
         "url": "https://www.charlesproxy.com/latest-release",
         "regex": "Version ([\\d.]+)"
