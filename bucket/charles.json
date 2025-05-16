@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.charlesproxy.com/assets/release/$version/charles-proxy-$version-win64.appx#/dl.7z"
+                "url": "https://www.charlesproxy.com/assets/release/$version/charles-proxy-$version-win-x86_64.appx#/dl.7z"
             }
         }
     }
