@@ -1,5 +1,5 @@
 {
-    "version": "17.2.5",
+    "version": "17.2.7",
     "description": "Shape your data, design your success. Modeling mastery at your fingertips.",
     "homepage": "https://www.navicat.com",
     "license": {
@@ -9,11 +9,16 @@
     "architecture": {
         "64bit": {
             "url": "https://dn.navicat.com/download/navicat17_premium_en_x64.exe",
-            "hash": "88c40cf929c367db1e7265ab55646bfd5de18671f5f0d66e73fad1802c512af8"
+            "hash": "8a9a3b240569f46139cdaa526a0e7c7b0ca09305d139a38e464a4ebbfa4b1c88"
         }
     },
     "innosetup": true,
-    "shortcuts": [["navicat.exe", "Navicat Premium"]],
+    "shortcuts": [
+        [
+            "navicat.exe",
+            "Navicat Premium"
+        ]
+    ],
     "checkver": {
         "url": "https://www.navicat.com/en/products/navicat-premium-release-note",
         "regex": "Navicat\\s+Premium\\s+\\(Windows\\)\\s+version\\s+([\\d.]+)"
