@@ -1,20 +1,20 @@
 {
-    "version": "6.3.2",
+    "version": "6.3.3",
     "homepage": "https://staruml.io",
     "description": "A sophisticated software modeler for agile and concise modeling.",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://staruml.io/api/download/releases-v6/StarUML%20Setup%206.3.2.exe#/dl.7z",
-            "hash": "455bccee13dba8927e078013d9116561ec09287fd14665efc2d88bcd82a0090f",
+            "url": "https://staruml.io/api/download/releases-v6/StarUML%20Setup%206.3.3.exe#/dl.7z",
+            "hash": "7eed48dce887e732787142575bf308f0ae4e7c592934b630459dec7a480353c2",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://staruml.io/api/download/releases-v6/StarUML%20Setup%206.3.2.exe#/dl.7z",
-            "hash": "455bccee13dba8927e078013d9116561ec09287fd14665efc2d88bcd82a0090f",
+            "url": "https://staruml.io/api/download/releases-v6/StarUML%20Setup%206.3.3.exe#/dl.7z",
+            "hash": "7eed48dce887e732787142575bf308f0ae4e7c592934b630459dec7a480353c2",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
