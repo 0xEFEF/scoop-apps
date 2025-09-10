@@ -17,8 +17,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://pull.ticktick.com/mac/release_note/mac_appcast.xml",
-        "regex": "shortVersionString=\"([\\d.]+)\""
+        "url": "https://pull.ticktick.com/windows/release_note.json",
+        "regex": "\"version\":\"([\\d.]+)\""
     },
     "autoupdate": {
         "architecture": {
