@@ -18,7 +18,7 @@
     ],
     "checkver": {
         "url": "https://pull.ticktick.com/windows/release_note.json",
-        "regex": "\"version\":\"([\\d.]+)\""
+        "regex": "\\\"version\\\":\\\"([\\d.]+)\\\""
     },
     "autoupdate": {
         "architecture": {

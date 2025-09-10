@@ -28,7 +28,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://staruml.io",
+        "url": "https://staruml.io/download",
         "regex": "StarUML Setup ([\\d.]+).exe"
     },
     "autoupdate": {
