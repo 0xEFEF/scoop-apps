@@ -20,8 +20,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://developer.wordpress.com/studio",
-        "regex": "studio-win32-v([\\d.]+).exe"
+        "url": "https://developer.wordpress.com/docs/developer-tools/studio/changelog",
+        "regex": "tag/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
