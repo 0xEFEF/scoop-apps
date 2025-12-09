@@ -40,12 +40,12 @@
   "persist": "data",
   "checkver": {
     "url": "https://antigravity.google/changelog",
-    "regex": "([\\d.]+)"
+    "regex": "(?<version>[\\d.]+)-(?<build>\\d+)/windows-x64/Antigravity.exe"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/$version-4787439284912128/windows-x64/Antigravity.exe"
+        "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/$matchVersion-$matchBuild/windows-x64/Antigravity.exe"
       }
     }
   }
