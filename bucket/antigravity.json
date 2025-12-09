@@ -40,7 +40,7 @@
   "persist": "data",
   "checkver": {
     "url": "https://antigravity.google/download",
-    "regex": "(?<version>[\\d.]+)-(?<build>\\d+)/windows-x64/Antigravity.exe"
+    "regex": "(?<version>[\\d.]+)-(?<build>\\d+)/windows-x64/Antigravity\\.exe"
   },
   "autoupdate": {
     "architecture": {
