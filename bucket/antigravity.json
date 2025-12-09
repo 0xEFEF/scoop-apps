@@ -39,7 +39,7 @@
   ],
   "persist": "data",
   "checkver": {
-    "url": "https://antigravity.google/download",
+    "url": "https://antigravity.google/main-WHICPWHT.js",
     "regex": "([\\d.]+)-(?<build>[\\d]+)/windows-x64"
   },
   "autoupdate": {
