@@ -1,5 +1,5 @@
 {
-    "version": "5.2",
+    "version": "5.2.1",
     "description": "A tool for viewing and debugging HTTP and SSL / HTTPS traffic between your machine and the Internet",
     "homepage": "https://www.charlesproxy.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.charlesproxy.com/assets/release/5.2/charles-proxy-5.2-win-x86_64.appx#/dl.7z",
-            "hash": "6222f301f21383191e48512b50acf48836b738debe62a55e003cbf1cbfded53c"
+            "url": "https://www.charlesproxy.com/assets/release/5.2.1/charles-proxy-5.2.1-win-x86_64.appx#/dl.7z",
+            "hash": "2d81e61f1e0ec2ed833e2afefb6931a9e7aff0b33d666c78e030ec419b44d293"
         }
     },
     "pre_install": [
